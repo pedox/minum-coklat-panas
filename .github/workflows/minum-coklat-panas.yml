@@ -1,0 +1,39 @@
+name: Minum Coklat Panas
+
+on:
+
+  push:
+    branches:
+      - master
+      
+  schedule:
+  - cron: "0 * * * *"
+
+jobs:
+  auto_commit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2      
+        with:
+         persist-credentials: false
+         fetch-depth: 0
+
+      - name: Modify last update
+        run: |
+          cat > MINUM_COKLAT_PANAS
+          d=`date '+%Y-%m-%dT%H:%M:%SZ' Minum Coklat Panas!`
+          echo $d > MINUM_COKLAT_PANAS
+          
+      - name: Commit changes
+        run: |
+          git config --local user.email "cungkring.ceking@gmail.com"
+          git config --local user.name "pedox"
+          git add -A
+          git commit -m "feat: Bermain papan, menyusun puzzle, minum cokelat panas, bermain tic tac toe"
+          
+      - name: GitHub Push
+        uses: ad-m/github-push-action@v0.5.0
+        with:
+          force: true
+          directory: "."
+          github_token: ${{ secrets.GITHUB_TOKEN }}
