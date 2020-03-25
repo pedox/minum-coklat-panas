@@ -21,7 +21,7 @@ jobs:
       - name: Modify last update
         run: |
           cat > MINUM_COKLAT_PANAS
-          d=`date '+%Y-%m-%dT%H:%M:%SZ' Minum Coklat Panas!`
+          d=`date '+%Y-%m-%dT%H:%M:%SZ'`
           echo $d > MINUM_COKLAT_PANAS
           
       - name: Commit changes
