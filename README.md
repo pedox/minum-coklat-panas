@@ -11,4 +11,4 @@ Minum Coklat Panas Bermain tik tak tu, Menyelesaikan Pazzeeel
 
 https://github.com/mazipan/auto-commit
 
-_Karena kalo di fork kaga jalan :( _
+*Karena kalo di fork kaga jalan :(*
