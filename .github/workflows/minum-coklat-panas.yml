@@ -20,7 +20,6 @@ jobs:
 
       - name: Modify last update
         run: |
-          cat > MINUM_COKLAT_PANAS
           i=`grep -o '[0-9]$' MINUM_COKLAT_PANAS`
           j=`expr $i + 1`
           k=`grep -o "[A-Za-z ,]*" MINUM_COKLAT_PANAS`
