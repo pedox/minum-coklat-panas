@@ -21,9 +21,11 @@ jobs:
       - name: Modify last update
         run: |
           cat > MINUM_COKLAT_PANAS
+          i=`grep -o '[0-9]$' MINUM_COKLAT_PANAS`
+          j=`expr $i + 1`
+          k=`grep -o "[A-Za-z ,]*" MINUM_COKLAT_PANAS`
           d=`date '+%Y-%m-%dT%H:%M:%SZ'`
-          echo $d > MINUM_COKLAT_PANAS
-          
+          echo "$d $k$j" > MINUM_COKLAT_PANAS
       - name: Commit changes
         run: |
           git config --local user.email "cungkring.ceking@gmail.com"
