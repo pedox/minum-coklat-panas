@@ -20,7 +20,7 @@ jobs:
 
       - name: Modify last update
         run: |
-          echo "Minum Coklat panas yang ke "`wc -l < MINUM_COKLAT_PANAS` | tee -a MINUM_COKLAT_PANAS
+          echo `awk '$6="";{print $0}' MINUM_COKLAT_PANAS` `awk '{print $6}' MINUM_COKLAT_PANAS | awk '{print $0 + 1 }'` > MINUM_COKLAT_PANAS
       - name: Commit changes
         run: |
           git config --local user.email "cungkring.ceking@gmail.com"
