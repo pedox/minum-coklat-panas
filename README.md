@@ -1,4 +1,4 @@
-# Minum Coklat Panas yang ke 1973
+# Minum Coklat Panas yang ke 1974
 
 ![Minum Coklat Panas](https://github.com/pedox/minum-coklat-panas/workflows/Minum%20Coklat%20Panas/badge.svg?branch=master)
 
