@@ -1,4 +1,4 @@
-# Minum Coklat Panas yang ke 2250
+# Minum Coklat Panas yang ke 2251
 
 ![Minum Coklat Panas](https://github.com/pedox/minum-coklat-panas/workflows/Minum%20Coklat%20Panas/badge.svg?branch=master)
 
